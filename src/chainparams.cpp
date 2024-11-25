@@ -174,7 +174,11 @@ public:
         assert(hashGenesisBlock == uint256("0x06e005f86644f15d2e4c62b59a038c798a3b0816ba58dcc8c91e02ce5a685299"));
         assert(genesis.hashMerkleRoot == uint256("0xb9594f964ad5d42bd99edbfaaeeec900cd0f7563a14d90982cf6675df98d7863"));
 
-        vSeeds.push_back(CDNSSeedData("marscoin.org", "dnsseed.marscoin.org"));
+        vSeeds.push_back(CDNSSeedData("107.170.27.222", "107.170.27.222" ));
+        vSeeds.push_back(CDNSSeedData("91.206.16.214", "91.206.16.214" ));
+        vSeeds.push_back(CDNSSeedData("134.209.160.91", "134.209.160.91" ));
+        vSeeds.push_back(CDNSSeedData("159.203.79.101", "159.203.79.101" ));
+        vSeeds.push_back(CDNSSeedData("85.15.179.171", "85.15.179.171" ));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
