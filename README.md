@@ -2,8 +2,6 @@
 
 
 **
-Compiling for windows in linux:
-
 
 ## Build Steps for Marscoin
 
