@@ -7,7 +7,7 @@ Compiling for windows in linux:
 
 ## Build Steps for Marscoin
 
-#Run the following commands sequentially from the specified locations to configure, compile, and build the project:
+## Run the following commands sequentially from the specified locations to configure, compile, and build the project:
 
 ### Step 1️⃣: In the depends Directory
 Navigate to the `depends` directory and ensure all scripts are executable:
