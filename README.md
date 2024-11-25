@@ -1,5 +1,29 @@
 [![Gitter](https://badges.gitter.im/marscoin-dev/community.svg)](https://gitter.im/marscoin-dev/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Discord](https://img.shields.io/discord/591914197219016707.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/WuUJYBr) [![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)](https://t.me/realmarscoin)
 
+
+**
+Compiling for windows in linux:
+
+
+## Build Steps for Marscoin
+
+Run the following commands sequentially from the specified locations to configure, compile, and build the project:
+
+### Step 1️⃣: In the depends Directory
+Navigate to the `depends` directory and ensure all scripts are executable:
+
+cd depends
+chmod +x *.*
+make download && make HOST=x86_64-w64-mingw32 -jXX
+
+### Step 2️⃣: In the Root Project Directory
+cd ..
+sudo ./autogen.sh 2>&1 | tee autogen.log && \
+sudo ./configure --prefix=`pwd`/depends/x86_64-w64-mingw32 2>&1 | tee configure.log && \
+sudo make -j8 2>&1 | tee make.log
+**
+
+
 http://www.marscoin.org
 
 http://www.marscoinfoundation.org
