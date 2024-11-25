@@ -20,6 +20,11 @@ sudo make -j8 2>&1 | tee make.log
 **
 
 
+
+--------------------------------------------------
+
+
+
 http://www.marscoin.org
 
 http://www.marscoinfoundation.org
